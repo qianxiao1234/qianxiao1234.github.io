@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: pink;
+}
+
+div #box {
+    background-color: white;
+    align-content: center;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: 5px double greenyellow;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px rgb(85, 85, 85);
+}
+
+#content_1 {
+    float: left;
+    width: 600px;
+    height: 290px;
+    padding: 0px;
+    border-right: 1px solid red;
+}
+
+#content_1 #date {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#content_1 #time {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 30px;
+}
+
+#content_2 {
+    float: left;
+    width: 199px;
+    height: 250px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+#content_2 #time_remaining {
+    text-align: center;
+    width: 199px;
+    height: 144px;
+}
+
+#content_2 #time_remaining div {
+    padding-top: 30px;
+}
+
+#content_2 #time_remaining div p {
+    font-size: 30px;
+}
+
+#content_2 #current_schedule {
+    text-align: center;
+    width: 199px;
+    height: 144px;
+    border-top: 1px solid red;
+}
+
+#content_2 #current_schedule div {
+    padding-top: 30px;
+}
+
+#content_2 #current_schedule div p {
+    font-size: 30px;
+}
+
+#content_3 {
+    float: left;
+    width: 266px;
+    height: 109px;
+    padding: 0px;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    text-align: center;
+}
+
+#content_3 div {
+    margin-top: 20px;
+}
+
+#content_3 div span {
+    font-size: 20px;
+}
+
+#content_4 {
+    float: left;
+    width: 266px;
+    height: 109px;
+    padding: 0px;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    text-align: center;
+}
+
+#content_4 div {
+    margin-top: 30px;
+}
+
+#content_4 div span {
+    font-size: 30px;
+}
+
+#content_5 {
+    float: left;
+    width: 266px;
+    height: 109px;
+    padding: 0px;
+    border-top: 1px solid red;
+    text-align: center;
+}
+
+#content_5 div {
+    margin-top: 10px;
+}
+
+#content_5 div #text {
+    font-size: 30px;
+}
+
+#content_5 div #time {
+    font-size: 40px;
+}
