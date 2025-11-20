@@ -6,129 +6,117 @@ body {
     background-color: pink;
 }
 
-div #box {
-    background-color: white;
-    align-content: center;
+#top {
+    width: 100%;
+    height: 50px;
+    /* margin-top: 0px; */
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+#content {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    min-height: 90vh; 
+}
+
+#content #main {
     width: 800px;
-    height: 400px;
-    margin: 0 auto;
+    height: auto;
+    /* margin: 30px; */
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 60%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#content #main #profile {
+    width: 290px;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+#content #main #profile img {
     margin-top: 50px;
-    margin-bottom: 15px;
-    border: 5px double greenyellow;
-    border-radius: 25px;
-    box-shadow: 10px 10px 5px rgb(85, 85, 85);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
-#content_1 {
-    float: left;
-    width: 600px;
-    height: 290px;
-    padding: 0px;
-    border-right: 1px solid red;
+#content #main #repositories {
+    width: 480px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
 }
 
-#content_1 #date {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
+#content #main #repositories ul {
+    width: 480px;
+    height: auto;
+    padding: 0;
+    list-style-type: none;
 }
 
-#content_1 #time {
-    text-align: center;
-    font-size: 80px;
-    margin-top: 30px;
+#content #main #repositorie {
+    width: 456px;
+    height: 116px;
+    margin: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
 }
 
-#content_2 {
-    float: left;
-    width: 199px;
-    height: 250px;
-    padding: 0px;
-    /* border: 1px solid red; */
+#content #main #repositorie div {
+    width: 449px;
+    height: 104px;
+    margin: 4px;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    min-height: 20px;
 }
 
-#content_2 #time_remaining {
-    text-align: center;
-    width: 199px;
-    height: 144px;
-}
-
-#content_2 #time_remaining div {
-    padding-top: 30px;
-}
-
-#content_2 #time_remaining div p {
-    font-size: 30px;
-}
-
-#content_2 #current_schedule {
-    text-align: center;
-    width: 199px;
-    height: 144px;
-    border-top: 1px solid red;
-}
-
-#content_2 #current_schedule div {
-    padding-top: 30px;
-}
-
-#content_2 #current_schedule div p {
-    font-size: 30px;
-}
-
-#content_3 {
-    float: left;
-    width: 266px;
-    height: 109px;
-    padding: 0px;
-    border-top: 1px solid red;
-    border-right: 1px solid red;
-    text-align: center;
-}
-
-#content_3 div {
-    margin-top: 20px;
-}
-
-#content_3 div span {
+#content #main #repositorie a {
+    text-decoration: none;
     font-size: 20px;
 }
 
-#content_4 {
-    float: left;
-    width: 266px;
-    height: 109px;
-    padding: 0px;
-    border-top: 1px solid red;
-    border-right: 1px solid red;
-    text-align: center;
+#content #main #repositorie span {
+    font-size: 15px;
 }
 
-#content_4 div {
-    margin-top: 30px;
+#content #main #repositorie #info {
+    margin-top: auto;
+    width: 449px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    /* 水平排列 */
+    align-items: flex-end;
+    /* 底部对齐 */
+    justify-content: flex-start;
+    /* 从左开始排列 */
 }
 
-#content_4 div span {
-    font-size: 30px;
-}
-
-#content_5 {
-    float: left;
-    width: 266px;
-    height: 109px;
-    padding: 0px;
-    border-top: 1px solid red;
-    text-align: center;
-}
-
-#content_5 div {
-    margin-top: 10px;
-}
-
-#content_5 div #text {
-    font-size: 30px;
-}
-
-#content_5 div #time {
-    font-size: 40px;
+#content #main #repositorie #info span {
+    margin-right: 10px;
+    /* span之间的间距 */
+    font-size: 15px;
 }

@@ -3,119 +3,135 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>浅笑科技-网页</title>
+    <title>浅笑</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language_color.css">
 </head>
 
 <body>
+    <div id="top"></div>
     <div id="content">
-        <div id="box">
-            <div>
-                <div id="content_1">
-                    <div id="date">日期加载中...</div>
-                    <div id="time">时间加载中...</div>
-                </div>
-                <div id="content_2">
-                    <div id="time_remaining">
-                        <div>
-                            <p>距离寒假还有</p>
-                            <p id="days">XX天</p>
-                        </div>
-                    </div>
-                    <div id="current_schedule">
-                        <div>
-                            <p>当前日程</p>
-                            <p>XX</p>
-                        </div>
-                    </div>
-                </div>
+        <div id="main">
+            <div id="profile">
+                <img src="images/qianxiao.jpg">
+                <h1>浅笑</h1>
+                <h2>qianxiao1234</h2>
+                <h3>3 被关注 · 7 关注</h3>
             </div>
-            <div>
-                <div id="content_3">
-                    <div>
-                        <span id="hitokoto">加载中！</span>
-                    </div>
-                </div>
-                <div id="content_4">
-                    <div>
-                        <span>懒得写!</span>
-                    </div>
-                </div>
-                <div id="content_5">
-                    <div>
-                        <p id="text">倒计时还剩</p>
-                        <p id="time">00:00:00</p>
-                    </div>
-                </div>
+            <div id="repositories">
+                <ul>
+                    <li id="repositorie">
+                        <div>
+                            <a href="https://github.com/qianxiao1234/Ubuntu_Change_Mirrors">Ubuntu_Change_Mirrors</a>
+                            <br>
+                            <span>一键给Ubuntu系统更换软件源（目前仅适配中科大源USTC）</span>
+                            <div id="info">
+                                <span id="LANG">
+                                    LANG:
+                                    <span class="Shell">
+                                        Shell
+                                    </span>
+                                </span>
+                                <span>
+                                    Star:
+                                    <span id="star">
+                                        7
+                                    </span>
+                                </span>
+                                <span>
+                                    Fork:
+                                    <span id="fork">
+                                        1
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="repositorie">
+                        <div>
+                            <a href="https://github.com/qianxiao1234/Debian_Change_Mirrors">Debian_Change_Mirrors</a>
+                            <br>
+                            <span>一键给 Debian/Kali 系统更换软件源（目前仅适配中科大源USTC）</span>
+                            <div id="info">
+                                <span id="LANG">
+                                    LANG:
+                                    <span class="Shell">
+                                        Shell
+                                    </span>
+                                </span>
+                                <span>
+                                    Star:
+                                    <span id="star">
+                                        5
+                                    </span>
+                                </span>
+                                <span>
+                                    Fork:
+                                    <span id="fork">
+                                        1
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="repositorie">
+                        <div>
+                            <a href="https://github.com/qianxiao1234/Server_Status_Mail">Server_Status_Mail</a>
+                            <br>
+                            <span>自动将服务器状态信息通过电子邮件发送到邮箱</span>
+                            <div id="info">
+                                <span id="LANG">
+                                    LANG:
+                                    <span class="Shell">
+                                        Shell
+                                    </span>
+                                </span>
+                                <span>
+                                    Star:
+                                    <span id="star">
+                                        6
+                                    </span>
+                                </span>
+                                <span>
+                                    Fork:
+                                    <span id="fork">
+                                        1
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="repositorie">
+                        <div>
+                            <a href="https://github.com/qianxiao1234/Time_Pages">Time_Pages</a>
+                            <br>
+                            <span>一个简易的时钟网页，可以自行fork后修改添加功能！ </span>
+                            <div id="info">
+                                <span id="LANG">
+                                    LANG:
+                                    <span class="HTML">
+                                        HTML
+                                    </span>
+                                </span>
+                                <span>
+                                    Star:
+                                    <span id="star">
+                                        5
+                                    </span>
+                                </span>
+                                <span>
+                                    Fork:
+                                    <span id="fork">
+                                        1
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </body>
-<script>
-    function updateDate() {
-        const now = new Date(); // 获取当前日期和时间
-        const options = {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-        }; // 设置日期和时间的格式
-        const dateString = now.toLocaleString('zh-CN', options); // 格式化为字符串
-        document.getElementById('date').innerText = dateString; // 更新页面内容
-    }
-
-    function updateTime() {
-        const now = new Date(); // 获取当前日期和时间
-        const options = {
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: false
-        }; // 设置日期和时间的格式
-        const timeString = now.toLocaleString('zh-CN', options); // 格式化为字符串
-        document.getElementById('time').innerText = timeString; // 更新页面内容
-    }
-
-    // 设置目标日期 - 2025年1月2日
-    const targetDate = new Date('2026-01-02T00:00:00');
-        
-    // 更新倒计时
-    function time_remaining() {
-        const now = new Date();
-        const timeRemaining = targetDate - now;
-            
-        // 计算天、小时、分钟和秒
-        const day = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const days = day + " " + "天";
-            
-        // 更新显示
-        document.getElementById('days').textContent = days.toString().padStart(2, '0');
-    }
-    
-    function fetchHitokoto() {
-        fetch('https://international.v1.hitokoto.cn/?c=j&encode=text')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('hitokoto').textContent = data;
-            })
-            .catch(error => {
-                console.error('获取一言失败:', error);
-                document.getElementById('hitokoto').textContent = '获取一言失败';
-            });
-    }
-
-    // 初始化页面
-    updateDate();
-    updateTime();
-    time_remaining();
-    fetchHitokoto();
-
-    // 每秒更新一次时间
-    setInterval(updateDate, 1000);
-    setInterval(updateTime, 1000);
-    setInterval(time_remaining, 1000);
-
-    // 点击刷新
-    document.getElementById('content_3').addEventListener('click', fetchHitokoto);
-</script>
 
 </html>
